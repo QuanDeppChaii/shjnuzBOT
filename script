@@ -1,6 +1,5 @@
 Set objShell = CreateObject("WScript.Shell")
 
-@echo "running"
 objShell.Run "powershell.exe -WindowStyle hidden -Command ""New-Item -ItemType Directory -Force -Path C:\Downloads""", 0, True
 WScript.Sleep 1000
 
